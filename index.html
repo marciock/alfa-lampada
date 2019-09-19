@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+
+    <title>Hello, world!</title>
+  </head>
+   <body>
+     <div class="container">
+      <h2>Lampadas</h2>
+        <div class="row">
+            <img src="apagada.png" id="apagada">
+            <img src="acesa.png" id="acesa">
+        </div>
+        <div>
+
+        </div>
+
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js" ></script>
+    <script src="bootstrap/js/popper.min.js" ></script>
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+   
+
+    <script>
+        const imgAcesa=document.getElementById('acesa');
+        const imgApagada=document.getElementById('apagada');
+
+        window.onload=()=>{
+            imgAcesa.style.display='none';
+        }
+
+        imgApagada.addEventListener('click',()=>{
+            imgApagada.style.display='none';
+            imgAcesa.style.display='block';
+        })
+
+        imgAcesa.addEventListener('click',()=>{
+            
+            imgAcesa.style.display='none';
+            imgApagada.style.display='block';
+        })
+
+        imgApagada.addEventListener('mouseover',()=>{
+            imgApagada.style.display='none';
+            imgAcesa.style.display='block';
+        })
+        imgAcesa.addEventListener('mouseout',()=>{
+            imgAcesa.style.display='none';
+            imgApagada.style.display='block';
+        })
+    
+    
+       
+     
+       
+    
+    </script>
+  </body>
+</html>
